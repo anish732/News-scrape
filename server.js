@@ -56,8 +56,15 @@ app.get('/scrape', function(req,res) {
                 console.log(err);
             });
         });
-        res.send("Scraping complete");
-    });
+        //res.send("Scraping complete");
+        res.render("./index.html");
+        res.json
+    })
+
+});
+
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname + "./public/index.html"));
 });
 
 // Route for getting all Articles from the db
