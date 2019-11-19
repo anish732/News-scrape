@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scraping With Mongoose</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!-------> <link rel="stylesheet" href="style.css"> 
+ <!----- <style>
+       #wrapper {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+}
+#articles {
+  display: inline-block;
+  overflow: auto;
+  width: 60%;
+  height: 700px;
+}
+#notes {
+  float: right;
+  width: 30%;
+}
+textarea, input {
+  display: block;
+  width: 100%;
+  background-color: #FCF5C7;
+  margin-top: 15px;
+}
+input {
+  height: 36px;
+  font-size: 24px;
+}
+textarea {
+  height: 200px;
+  font-size: 18px;
+}
+.summary {
+    background-color:cornflowerblue;
+    margin-bottom: 12px;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.save-article {
+    float:right;
+    border-color: cornflowerblue;
+    border-style: solid;
+    border-width: 2px;
+    font-family: Shrikhand, cursive;
+    background-color: white;
+}
+.navbar-inverse{
+    display: inline;
+}
+
+   </style> --->
+  </head>
+  <body>
+      <div class="navbar navbar-inverse">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <a class="navbar-brand" href="/">Mongo Scrapper</a>
+              </div>
+              <ul class="nav navbar-nav">
+                  <li class="active"><a href="/">Home</a></li>
+                  <li><a href="/scrape" class="btn btn-danger scrape-new">SCRAPE NEW ARTICLES!</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="jumbotron text-center">
+          <div class="overlay">
+          </div>
+          <div class="background-image">
+
+          </div>
+          <div class="caption">
+              <h1>Mongo Scrapper</h1>
+              <p class="p">Wall Street Journal</p>
+          </div>
+      </div>
+      <div class="article-container">
+            <div id="notes"></div>
+
+            <div id="wrapper">
+                    <div id="articles"></div>
+                    <div id="save"></div>
+                  </div>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+body { 
+    background-image: url('newspaper.jpg');
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#articles {
+  display: inline-block;
+  overflow: auto;
+  width: 100%;
+  height: 700px;
+}
+#notes {
+  width: 30%;
+  margin-left: 500px;
+  margin-bottom: 25px;
+}
+textarea, input {
+  display: block;
+  width: 100%;
+  background-color: white;
+  margin-top: 15px;
+}
+.note-div {
+    background-color:cornflowerblue;
+}
+input {
+  height: 36px;
+  font-size: 24px;
+}
+textarea {
+  height: 200px;
+  font-size: 18px;
+}
+.summary {
+    background-color:cornflowerblue;
+    margin-bottom: 12px;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.save-article {
+    float:right;
+    border-color: cornflowerblue;
+    border-style: solid;
+    border-width: 2px;
+    font-family: Shrikhand, cursive;
+    background-color: lightskyblue;
+    border-radius: 8px;
+
+}
+.jumbotron {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 10px 5px 20px 2px lightslategray
+}
+.jumbotron .overlay {
+    background: linear-gradient(#333, black);
+    position: absolute;
+    opacity: 0.7;
+    z-index: auto;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+}
+.jumbotron .background-image {
+    height: 100%;
+    background-image: url("newspaper.jpg");
+    background-size: cover;
+}
+.jumbotron .caption {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+.jumbotron .caption h1,
+.jumbotron .caption p {
+    color: white;
+}
+.jumbotron h1 {
+    font-weight: 700;
+    font-size: 80px;
+}
+.jumbotron p {
+    font-size: 30px;
+}
+.navbar-inverse .navbar-nav>li>a.scrape-new:hover {
+    background: #4caf50;
+}
+.navbar-inverse .navbar-nav>li>a.scrape-new:active {
+    background: #e51c23;
+}
+.scrape-new {
+    cursor: pointer;
+}
+.navbar {
+    margin-bottom: 0;
+}
+.nav {
+    display: inline;
+    
+}
+.panel-body{
+    background-color: white;
+    margin-left: -9px;
+}
+.panel-heading {
+    background-color: cornflowerblue;
+}
+p {
+    margin-bottom: -11px;
+}
+.take-note {
+    margin-left: 80%;
+    margin-bottom: 8px;
+    border-color: cornflowerblue;
+    border-style: solid;
+    border-width: 2px;
+    font-family: Shrikhand, cursive;
+    border-radius: 8px;
+    background-color: lightskyblue;
+
+}
+.container-fluid {
+    background-color: cornflowerblue;
+    display: inline;
+    color: white;
+}
+a {
+    color: white;
+}
+.navbar-brand {
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: 500;
+}
+#savenote {
+    border-color: cornflowerblue;
+    border-style: solid;
+    border-width: 2px;
+    font-family: Shrikhand, cursive;
+    border-radius: 8px;
+    background-color: lightskyblue;
+
+}
+#deletenote {
+    border-color: cornflowerblue;
+    border-style: solid;
+    border-width: 2px;
+    font-family: Shrikhand, cursive;
+    border-radius: 8px;
+    background-color: lightskyblue;
+
+}
