@@ -75,7 +75,7 @@ $(document).on('click', '#scrape-new', function(){
         // A textarea to add a new note body
         $("#notes").append("<textarea id='bodyinput' name='body' placeholder='Note'></textarea>");
         // A button to submit a new note, with the id of the article saved to it
-        $("#notes").append("<button data-id='" + data._id + "' id='savenote'>Save Note</button><button data-id='" + data._id + "' id='deletenote'>Delete Note</button><br>");
+        $("#notes").append("<button data-id='" + data._id + "' id='savenote'>Save Note</button>");
   
         // If there's a note in the article
         if (data.note) {
