@@ -56,9 +56,7 @@ app.get('/scrape', function(req,res) {
                 console.log(err);
             });
         });
-        //res.send("Scraping complete");
-        res.render("./index.html");
-        res.json
+        res.send("Scraping complete");
     })
 
 });

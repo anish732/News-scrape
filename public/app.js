@@ -3,7 +3,7 @@ $.getJSON("/articles", function(data) {
     // For each one
     for (var i = 0; i < data.length; i++) {
       // Display the apropos information on the page
-      $("#articles").prepend(`<div class=summary >
+      $("#articles").prepend(`<div class=summary id=${data[i]._id} >
       <div class=panel-heading>
       <h3>${data[i].title}</h3>
       </div>
@@ -30,13 +30,30 @@ $.getJSON("/articles", function(data) {
           url: "/delete/" + selected,
 
           success: function(response){
+            console.log(response)
               // Remove Note
-              selected.remove();
+             // selected.remove();
+             $("#" + selected).remove();
+
+             // window.location.reload();
              // $(".summary").val("");
-             $(".summary").empty();
+            // $(".summary").empty();
           }
       })
   })
+
+  //Scrape article click function
+
+$(document).on('click', '#scrape-new', function(){
+  console.log('clicked')
+  $.ajax({
+    method: "GET",
+    url: "/scrape"
+  }).then(function(res){
+    console.log(res);
+    window.location.reload();
+  })
+})
   
   
 //   // Whenever someone clicks div tag

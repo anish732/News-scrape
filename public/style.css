@@ -93,13 +93,13 @@ textarea {
 .jumbotron p {
     font-size: 30px;
 }
-.navbar-inverse .navbar-nav>li>a.scrape-new:hover {
+.navbar-inverse .navbar-nav>li>button#scrape-new:hover {
     background: #4caf50;
 }
-.navbar-inverse .navbar-nav>li>a.scrape-new:active {
+.navbar-inverse .navbar-nav>li>button#scrape-new:active {
     background: #e51c23;
 }
-.scrape-new {
+#scrape-new {
     cursor: pointer;
 }
 .navbar {
