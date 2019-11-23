@@ -35,9 +35,6 @@ $.getJSON("/articles", function(data) {
              // selected.remove();
              $("#" + selected).remove();
 
-             // window.location.reload();
-             // $(".summary").val("");
-            // $(".summary").empty();
           }
       })
   })
@@ -74,9 +71,9 @@ $(document).on('click', '#scrape-new', function(){
         // The title of the article
         $("#notes").append("<div class=note-div><h3>" + data.title + "</h3></div>");
         // An input to enter a new title
-        $("#notes").append("<input id='titleinput' name='title' ><br>");
+        $("#notes").append("<input id='titleinput' name='title'placeholder='Title' ><br>");
         // A textarea to add a new note body
-        $("#notes").append("<textarea id='bodyinput' name='body'></textarea>");
+        $("#notes").append("<textarea id='bodyinput' name='body' placeholder='Note'></textarea>");
         // A button to submit a new note, with the id of the article saved to it
         $("#notes").append("<button data-id='" + data._id + "' id='savenote'>Save Note</button><button data-id='" + data._id + "' id='deletenote'>Delete Note</button><br>");
   
